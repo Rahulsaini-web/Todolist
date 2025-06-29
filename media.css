@@ -1,0 +1,22 @@
+@media(min-width :320px) and (max-width: 576px){
+    input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0px;
+    font-size: 16px;
+    font-weight: 14px;
+}
+    button {
+    border: none;
+    outline: none;
+    padding: 16px 24px;
+    background: #ff5945;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin: 0px -22px;
+}
+}
