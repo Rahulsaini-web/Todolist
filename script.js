@@ -23,7 +23,7 @@ listContainer.addEventListener("click" , function(e){
         e.target.classList.toggle("checked");
         saveData();
     }
-    else if(e.target.tagName === "button"){
+    else if(e.target.tagName === "BUTTON"){
         e.target.parentElement.remove();
         saveData();
     }
