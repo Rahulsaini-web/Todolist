@@ -26,9 +26,9 @@ listContainer.addEventListener("click" , function(e){
     }
     else if(e.target.tagName === "BUTTON"){
         e.target.parentElement.remove();
+        alert("Task deleted successfully.");
         saveData();
-    }
-    alert("Task deleted successfully."); 
+    } 
 },false);
 
 
