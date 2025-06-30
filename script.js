@@ -10,9 +10,9 @@ function AddTask(){
         let li =document.createElement("li");
             li.innerHTML =inputBox.value;
             listContainer.appendChild(li);
-            let span = document.createElement("span");
-            span.innerHTML = "Delete";
-            li.appendChild(span);
+            let button = document.createElement("button");
+            button.innerHTML = "Delete";
+            li.appendChild(button);
     }
     inputBox.value = "";
     saveData();
@@ -23,7 +23,7 @@ listContainer.addEventListener("click" , function(e){
         e.target.classList.toggle("checked");
         saveData();
     }
-    else if(e.target.tagName === "SPAN"){
+    else if(e.target.tagName === "button"){
         e.target.parentElement.remove();
         saveData();
     }
