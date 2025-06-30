@@ -14,22 +14,22 @@ function AddTask(){
             button.innerHTML = "Delete";
             li.appendChild(button);
     }
-    alert("Your task has been added successfully!");
     inputBox.value = "";
     saveData();
+    alert("Your task has been added successfully!");
 }
 
 listContainer.addEventListener("click" , function(e){
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
-       alert("Your task has been checked successfully!");
         saveData();
+        alert("Your task checked successfully!");
     }
     else if(e.target.tagName === "BUTTON"){
         e.target.parentElement.remove();
-       alert("Task deleted successfully."); 
         saveData();
     }
+    alert("Task deleted successfully."); 
 },false);
 
 
